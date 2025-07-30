@@ -68,49 +68,31 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* Treatwell Widget Section */}
-      <section className="py-16 bg-white">
+      {/* Treatwell Embed */}
+      <section id="prenota-online" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 md:px-8">
-          <div className="text-center mb-8 fade-in">
-            <h2 className="text-3xl sm:text-4xl font-heading font-bold mb-6 text-black">
+          <div className="text-center mb-12 fade-in">
+            <h5 className="text-gray-600 tracking-widest uppercase mb-2 font-primary">
+              Prenota Online
+            </h5>
+            <h2 className="text-4xl sm:text-5xl font-heading font-bold mb-6 text-black">
               PRENOTA DIRETTAMENTE SU TREATWELL
             </h2>
             <div className="w-20 h-[2px] bg-gold mx-auto mb-6"></div>
+            <p className="text-gray-600 mt-4 max-w-2xl mx-auto font-primary">
+              Prenota direttamente online i nostri servizi attraverso la piattaforma Treatwell
+            </p>
           </div>
           
-          <div className="max-w-4xl mx-auto fade-in">
-            <div className="bg-gray-50 p-8 border-2 border-gray-200 shadow-lg">
-              {/* Treatwell Widget Placeholder */}
-              <div className="text-center">
-                <p className="text-gray-600 font-primary mb-4">
-                  Widget Treatwell sarà inserito qui
-                </p>
-                <div className="bg-white border-2 border-dashed border-gray-300 p-12 min-h-[300px] flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-gold flex items-center justify-center mx-auto mb-4">
-                      <svg
-                        className="w-8 h-8 text-black"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                        />
-                      </svg>
-                    </div>
-                    <h3 className="text-xl font-heading font-bold text-black mb-2">
-                      Treatwell Booking Widget
-                    </h3>
-                    <p className="text-gray-600 font-primary">
-                      Il widget di prenotazione Treatwell verrà integrato qui
-                    </p>
-                  </div>
-                </div>
-              </div>
+          <div className="max-w-6xl mx-auto fade-in">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-gray-200">
+              <iframe
+                src="https://widget.treatwell.it/salone/100027705/menu/"
+                width="100%"
+                height="800"
+                style={{ border: "none" }}
+                title="Prenota con Treatwell"
+              />
             </div>
           </div>
         </div>
